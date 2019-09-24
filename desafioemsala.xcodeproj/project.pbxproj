@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		133A341123397D3000D680A5 /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133A341023397D3000D680A5 /* CarDetailsViewController.swift */; };
+		133A34182339A6B100D680A5 /* CadastroCarroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133A34172339A6B000D680A5 /* CadastroCarroViewController.swift */; };
 		13880CA1233585A700786BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13880CA0233585A700786BD7 /* AppDelegate.swift */; };
 		13880CA3233585A700786BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13880CA2233585A700786BD7 /* ViewController.swift */; };
 		13880CA6233585A700786BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13880CA4233585A700786BD7 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		133A341023397D3000D680A5 /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		133A34172339A6B000D680A5 /* CadastroCarroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroCarroViewController.swift; sourceTree = "<group>"; };
 		13880C9D233585A700786BD7 /* desafioemsala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafioemsala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13880CA0233585A700786BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13880CA2233585A700786BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133A341223399F1B00D680A5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				13880CBE23358C7200786BD7 /* CustomTableViewCell.swift */,
+				13880CBF23358C7200786BD7 /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		13880C94233585A700786BD7 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +87,6 @@
 				13880CB42335866D00786BD7 /* Controller */,
 				13880CA7233585A900786BD7 /* Assets.xcassets */,
 				13880CAC233585A900786BD7 /* Info.plist */,
-				13880CB22335865200786BD7 /* carros.json */,
 			);
 			path = desafioemsala;
 			sourceTree = "<group>";
@@ -92,9 +102,9 @@
 		13880CB52335867600786BD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				13880CBF23358C7200786BD7 /* CustomTableViewCell.xib */,
+				133A341223399F1B00D680A5 /* Cell */,
 				13880CA4233585A700786BD7 /* Main.storyboard */,
-				13880CBE23358C7200786BD7 /* CustomTableViewCell.swift */,
+				133A34172339A6B000D680A5 /* CadastroCarroViewController.swift */,
 				13880CA2233585A700786BD7 /* ViewController.swift */,
 				133A341023397D3000D680A5 /* CarDetailsViewController.swift */,
 			);
@@ -104,6 +114,7 @@
 		13880CB62335867B00786BD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13880CB22335865200786BD7 /* carros.json */,
 				13880CB72335869400786BD7 /* Carro.swift */,
 			);
 			path = Model;
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13880CC023358C7200786BD7 /* CustomTableViewCell.swift in Sources */,
+				133A34182339A6B100D680A5 /* CadastroCarroViewController.swift in Sources */,
 				133A341123397D3000D680A5 /* CarDetailsViewController.swift in Sources */,
 				13880CBB2335881900786BD7 /* CarroProvider.swift in Sources */,
 				13880CBD2335885F00786BD7 /* CarroController.swift in Sources */,
